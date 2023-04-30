@@ -5,6 +5,7 @@ describe('Cliente', () => {
   let cliente: Cliente;
   beforeEach(() => {
     cliente = new Cliente(
+      68,
       'José da Silva',
       10000,
       new Date('2023-04-29T10:38:36'),

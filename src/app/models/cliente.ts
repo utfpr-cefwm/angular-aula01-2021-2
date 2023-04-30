@@ -1,6 +1,12 @@
 export class Cliente {
 
   constructor(
+
+    /**
+     * Número de identificação único do cliente.
+     */
+    public id: number,
+
     /**
      * Nome completo do cliente (nome + sobrenome).
      */
