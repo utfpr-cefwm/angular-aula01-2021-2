@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsultaSaldoComponent } from './components/consulta-saldo/consulta-saldo.component';
 import { ClassNamePorValorPipe } from './pipes/class-name-por-valor.pipe';
+import { CardClienteComponent } from './components/card-cliente/card-cliente.component';
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -15,6 +16,7 @@ registerLocaleData(localePt, 'pt-BR');
     AppComponent,
     ConsultaSaldoComponent,
     ClassNamePorValorPipe,
+    CardClienteComponent,
   ],
   imports: [
     BrowserModule,
