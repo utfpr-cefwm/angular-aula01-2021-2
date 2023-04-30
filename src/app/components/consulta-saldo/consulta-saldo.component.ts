@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 import { Cliente } from 'src/app/models/cliente';
 
+const CLASSES = {
+  positivo: 'credito positivo',
+};
+
 @Component({
   selector: 'app-consulta-saldo',
   templateUrl: './consulta-saldo.component.html',
@@ -12,7 +16,7 @@ export class ConsultaSaldoComponent implements OnInit {
   public cliente: Cliente = new Cliente(
     1,
     'Maria das Couves',
-    99.99,
+    99999.99,
     new Date(),
   );
 
@@ -22,5 +26,13 @@ export class ConsultaSaldoComponent implements OnInit {
 
   public ngOnInit(): void {
   }
+
+  public get clss(): Partial<{
+    positivo: string;
+    negativo: string;
+    zero: string;
+  }> {
+    return CLASSES;
+  };
 
 }

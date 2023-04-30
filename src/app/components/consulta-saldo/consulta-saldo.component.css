@@ -9,6 +9,9 @@
 .negativo {
   color: red;
 }
+.credito.positivo {
+  font-weight: bold;
+}
 
 section {
   display: grid;
