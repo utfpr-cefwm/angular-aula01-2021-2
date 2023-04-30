@@ -4,13 +4,13 @@
   </h1>
   <header>
     <div class="atenuado">
-      Último login: {{ cliente.ultimoAcesso }}
+      Último login: {{ cliente.ultimoAcesso | date:'medium':'GMT-03' }}
     </div>
     <div>
-      <b>Cliente</b>: {{ cliente.nome }}
+      <b>Cliente</b>: {{ cliente.nome | uppercase }}
     </div>
     <div>
-      <b>Saldo</b>: {{ cliente.saldo }}
+      <b>Saldo</b>: {{ cliente.saldo | currency:'BRL' }}
     </div>
   </header>
 </section>
