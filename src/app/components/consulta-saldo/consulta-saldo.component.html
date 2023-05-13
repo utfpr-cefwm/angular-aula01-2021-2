@@ -2,5 +2,15 @@
   <h1>
     Consulta saldo
   </h1>
-  <app-card-cliente [cliente]="maria"></app-card-cliente>
+  <button
+    *ngFor="let c of clientes"
+    (click)="clienteSelecionado = c"
+  >
+    {{ c.nome }}
+  </button>
+  <app-card-cliente
+    *ngIf="clienteSelecionado"
+    [cliente]="clienteSelecionado"
+  >
+  </app-card-cliente>
 </section>
